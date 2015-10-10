@@ -1,0 +1,33 @@
+; Правило 1
+Id            =Rule 1
+CheckPath     =D:\_Avaya\ConsoleApplication1\ConsoleApplication1\FlagFiles\Flag_1
+CheckType     =existence
+CheckPeriod   =5
+CheckThreshold=600
+Targets        =989167156062
+TalkFile      =22.wav
+TonesAction   =123#;write recall
+;
+; Правило 2
+Id            =Rule 2
+CheckPath     =D:\_Avaya\ConsoleApplication1\ConsoleApplication1\FlagFiles\Flag_2
+CheckType     =absence
+CheckPeriod   =10
+CheckThreshold=30
+Targets       =989167156062
+TalkFile      =22.wav
+AlertTypes    =any
+AlertAttempts =3
+TonesAction   =123;call 989151111190;10
+TonesAction   =0;execute D:\_Avaya\ConsoleApplication1\ConsoleApplication1\check.bat
+TonesAction   =#;write recall
+;
+; Правило 3
+Id            =Rule 3
+CheckPath     =D:\_Avaya\ConsoleApplication1\ConsoleApplication1\FlagFiles\Flag_3
+CheckType     =change
+CheckPeriod   =15
+CheckThreshold=10
+Targets       =989167156062
+TalkFile      =22.wav
+TonesAction   =123#;write recall

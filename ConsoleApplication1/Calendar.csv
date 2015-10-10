@@ -1,0 +1,6 @@
+Disable;Day;Start;Stop;Calls per hour;Comment
+;*;07:00;13:00;1200;Any day
+;*;13:30;23:59;1200;Any day
+;1;10:00;13:00;40;Monday
+;7;10:00;13:00;50;Sunday
+;12.05.2013;10:00;13:00;60;Specific day
